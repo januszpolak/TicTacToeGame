@@ -94,7 +94,7 @@ namespace TicTacToe
                 btn1.Background = Brushes.Green;
                 btn2.Background = Brushes.Green;
                 btn3.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn1.Content +  " winner");
                 return true;
             }
             if (btn4.Content != string.Empty && btn4.Content == btn5.Content && btn5.Content == btn6.Content)
@@ -102,7 +102,7 @@ namespace TicTacToe
                 btn4.Background = Brushes.Green;
                 btn5.Background = Brushes.Green;
                 btn6.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn4.Content + " winner");
                 return true;
             }
             if (btn7.Content != string.Empty && btn7.Content == btn8.Content && btn8.Content == btn9.Content)
@@ -110,7 +110,7 @@ namespace TicTacToe
                 btn7.Background = Brushes.Green;
                 btn8.Background = Brushes.Green;
                 btn9.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn7.Content + " winner");
                 return true;
             }
             if (btn1.Content != string.Empty && btn1.Content == btn4.Content && btn4.Content == btn7.Content)
@@ -118,7 +118,7 @@ namespace TicTacToe
                 btn1.Background = Brushes.Green;
                 btn4.Background = Brushes.Green;
                 btn7.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn1.Content + " winner");
                 return true;
             }
             if (btn2.Content != string.Empty && btn2.Content == btn5.Content && btn5.Content == btn8.Content)
@@ -126,7 +126,7 @@ namespace TicTacToe
                 btn2.Background = Brushes.Green;
                 btn5.Background = Brushes.Green;
                 btn8.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn2.Content + " winner");
                 return true;
             }
             if (btn3.Content != string.Empty && btn3.Content == btn6.Content && btn6.Content == btn9.Content)
@@ -134,7 +134,7 @@ namespace TicTacToe
                 btn3.Background = Brushes.Green;
                 btn6.Background = Brushes.Green;
                 btn9.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn3.Content + " winner");
                 return true;
             }
             if (btn1.Content != string.Empty && btn1.Content == btn5.Content && btn5.Content == btn9.Content)
@@ -150,7 +150,7 @@ namespace TicTacToe
                 btn3.Background = Brushes.Green;
                 btn5.Background = Brushes.Green;
                 btn7.Background = Brushes.Green;
-                MessageBox.Show("winner");
+                MessageBox.Show(btn3.Content + " winner");
                 return true;
             }
             return false;
