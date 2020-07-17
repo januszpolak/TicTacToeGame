@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace TicTacToe
 {
@@ -34,6 +23,8 @@ namespace TicTacToe
            
         }
 
+
+        // new game function (reset buttons content and background)
         public void NewGame()
         {
             Counter = 0;
@@ -69,7 +60,7 @@ namespace TicTacToe
 
             button.Content = isTurnPlayer1 ? "X" : "O";
             
-
+            // After 9 clicks check who wins or start new game
             Counter++;
             if (Counter > 9)
             {
@@ -87,6 +78,7 @@ namespace TicTacToe
             }
         }
 
+        // This function check buttons content "X" or "O" to find winner in row or column
         private bool Winner()
         {
             if (btn1.Content != string.Empty && btn1.Content == btn2.Content && btn2.Content == btn3.Content)
@@ -156,6 +148,7 @@ namespace TicTacToe
             return false;
         }
 
+        // Ask player to start game again when draw or someone win
         private bool Message()
         {
             MessageBox.Show("Start Again?");
